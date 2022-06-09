@@ -6,8 +6,7 @@ class Play_list:
     def __getitem__(self, item):
         return self._programas[item]
 
-    @property
-    def tamanho(self):
+    def __len__(self):
         return len(self._programas) 
 
     @property
@@ -71,5 +70,4 @@ minha_playlist = Play_list('fim de semana',filmes_e_series)
 for programa in minha_playlist:
    print(programa)
 
-print(f'Tamanho: {minha_playlist.tamanho}') 
-print(vingadores in minha_playlist)
+print(f'Tamanho: {len(minha_playlist)}') 
