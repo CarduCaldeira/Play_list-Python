@@ -13,12 +13,11 @@ class Play_list:
     def listagem(self):
         return self._programas
 
-
 class Programa:
     def __init__(self, nome, ano):
         self._nome = nome.title()
         self.ano = ano
-        self._likes =0
+        self._likes = 0
     
     @property
     def likes(self):
@@ -71,3 +70,5 @@ for programa in minha_playlist:
    print(programa)
 
 print(f'Tamanho: {len(minha_playlist)}') 
+vingadores.nome = 'teste'
+print(vingadores.nome)
